@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#368FF3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvQuestNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:text="1/5"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/tvQuestNo"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/quizzimage"/>
+
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="left"
+        android:text="Question will be here ?"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvQuestion"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="30dp">
+
+        <RadioButton
+            android:id="@+id/rbOpt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Option1"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rbOpt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:text=" Option2"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"/>
+
+        <RadioButton
+            android:id="@+id/rbOpt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:text=" Option3"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rbOpt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:text=" Option4"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/round_button"
+        android:elevation="15dp"
+        android:text="NEXT"
+        android:textColor="#368FF3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF" />
+
+
+
+</RelativeLayout>
